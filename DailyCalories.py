@@ -15,7 +15,7 @@ height = st.number_input('Height (inches)',60)
 weight = st.number_input('Weight (pounds)',60)
 #Daily Activity
 activity = st.selectbox('Activity Level',['Sedentary','Lightly Active','Moderately Active','Very Active','Super Active'])
-actDict = {'Sedentary':1.2,'Lightly Active':1.3,'Moderately Active':1.5,'Very Active':1.7,'Super Active':1.9}
+actDict = {'Sedentary':1.1,'Lightly Active':1.2,'Moderately Active':1.3,'Very Active':1.5,'Super Active':1.7}
 
 
 
