@@ -25,7 +25,7 @@ actDict = {'Sedentary':1.2,'Lightly Active':1.3,'Moderately Active':1.5,'Very Ac
 
 if gender == 'Male':
     BMR = round(66 + (6.3 * weight) + (12.9 * height) - (6.8 * age),2)
-    cals = BMR * actDict[activity]
+    cals = round(BMR * actDict[activity],2)
     time.sleep(1.5)
     st.write("""
     ## Your daily BMR is:""")
@@ -37,7 +37,7 @@ if gender == 'Male':
     
 else:
     BMR = round(655 + (4.3 * weight) + (4.7 * height) - (4.7 * age),2)
-    cals = BMR * actDict[activity]
+    cals = round(BMR * actDict[activity],2)
     time.sleep(1.5)
     st.write("""
     ## Your daily BMR is:""")
